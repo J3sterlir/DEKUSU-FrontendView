@@ -9,11 +9,11 @@ darkModeToggle.addEventListener('click', () => {
 
     if (body.classList.contains('dark-mode')) {
         darkModeToggle.textContent = '☾';
-        Logo.src = '/dekusu logo(Dark).png'
+        Logo.src = 'dekusu logo(Dark).png'
         
     } else {
         darkModeToggle.textContent = '☀︎';
-        Logo.src = '/dekusu logo.png'
+        Logo.src = 'dekusu logo.png'
     }
 });
 
@@ -22,7 +22,7 @@ document.getElementById('visitorform').addEventListener('submit', function(e) {
 
     const form = document.getElementById('Purpose').value;
     if (form){
-        window.location.href = '/dashboard(guest).html';
+        window.location.href = 'dashboard(guest).html';
     }
 });
 
@@ -34,7 +34,7 @@ document.getElementById('loginForm').addEventListener('submit', (e) => {
 
     if (email === 'admin@adnu.edu.ph' && password === 'password123') {
         alert('Login successful! Redirecting...');
-        window.location.href = '/dashboard.html';
+        window.location.href = 'dashboard.html';
     } 
     else {
         alert('Invalid email or password. Please try again.');
