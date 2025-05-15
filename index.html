@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNU DEKUSU - Login</title>
+    <link rel="stylesheet" href="/signupdekusu.css">
+    <link rel="stylesheet" href="/formstyle.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>  
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="/dekusu logo.png" alt="ADNU_Logo" class="logo" id="Logo">
+        </div>
+        <div class="right-section">
+            <div class="login-box">
+                <h2 class="Login">LOGIN</h2>
+                <form id="loginForm">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="ADNU GBOX" required >
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="●●●●●●●●●●" required>
+
+                    <button type="submit" class="btn">Sign In</button>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                    <a href="#" class="visitor" id="visitor">Visitor</a>
+                </form>
+            </div>
+        </div>
+        <button id="darkModeToggle" class="dark-mode-btn">☀</button>
+
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                <h2 class="formheader">Visitor Form</h2>
+                <form id = "visitorform">
+                    <label for="visitor-name" class="formlabel">Please choose the reason for your visit.</label>
+                    <br></br>
+                    <select id="Purpose" required>
+                      <option value="" disabled selected>Purpose Of Visit:</option>
+                      <option value="1">Paying</option>
+                      <option value="2">Inquiring</option>
+                      <option value="3">Applying</option>
+                      <option value="3">Other</option>
+                    </select>
+                    <div>
+                        <button type="submit" class="continue">Continue</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="/signupdekusu.js"></script>
+</body>
+</html>
